@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/fl_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/mapFragment"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/search"
+                android:src="@drawable/search_circle"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"/>
+            
+            <RelativeLayout
+                android:id="@+id/locationMarker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="30dp"
+                android:paddingBottom="30dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UnusedAttribute">
+                <ImageView
+                    android:id="@+id/markerSet"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/marker" />
+                <ImageView
+                    android:id="@+id/marker"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/marker_set" />
+                <ProgressBar
+                    android:visibility="invisible"
+                    android:id="@+id/progress"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    style="@style/Widget.AppCompat.ProgressBar"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:indeterminate="true"
+                    android:indeterminateTintMode="src_atop"
+                    android:indeterminateTint="@color/colorWhite"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/setLayout"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/layoutAddress"
+                    android:layout_marginRight="26dp"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginBottom="@dimen/_10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="7dp">
+                    <LinearLayout
+                        android:layout_margin="@dimen/_5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                        <TextView
+                            android:id="@+id/textAddress"
+                            android:padding="@dimen/_10dp"
+                            android:textSize="@dimen/textMedium"
+                            android:textColor="@color/colorTextGray4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <Button
+                    android:layout_marginRight="26dp"
+                    android:layout_marginLeft="26dp"
+                    android:id="@+id/setLocation"
+                    android:layout_marginBottom="10dp"
+                    android:text="SET LOKASI"
+                    style="@style/Widget.Button.Success"/>
+            </LinearLayout>
+            
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

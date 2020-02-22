@@ -1,0 +1,206 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.LoginTheme" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryExtraDark</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+    <style name="AppTheme.Toolbar">
+        <item name="android:textColorSecondary">@android:color/primary_text_dark</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="NavigationTab" parent="Widget.Design.TabLayout">
+        <item name="tabSelectedTextColor">@color/colorPrimaryDark</item>
+        <item name="tabTextAppearance">@style/NavigationTabTextAppearance</item>
+    </style>
+
+    <style name="NavigationTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">13sp</item>
+    </style>
+    
+    <style name="Widget.TextView.Title" parent="android:Widget">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:textSize">@dimen/textSmallExtra</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="Widget.Button.Primary" parent="android:Widget">
+        <item name="android:background">@drawable/btn_primary</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="Widget.Button.Success" parent="android:Widget">
+        <item name="android:background">@drawable/btn_success</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="Widget.Button.Danger" parent="android:Widget">
+        <item name="android:background">@drawable/btn_danger</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="Widget.Button.Secondary" parent="android:Widget">
+        <item name="android:background">@drawable/btn_secondary</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/colorTextGray4</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="Widget.EditText.Primary" parent="android:Widget">
+        <item name="android:background">@drawable/bg_input</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">@dimen/textMedium</item>
+        <item name="android:textColor">@color/colorTextGray3</item>
+        <item name="android:layout_marginTop">7dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">42dp</item>
+    </style>
+
+    <style name="Widget.Disable" parent="android:Widget">
+        <item name="android:background">@drawable/bg_input_disable</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">@dimen/textMedium</item>
+        <item name="android:textColor">@color/colorTextGray3</item>
+        <item name="android:layout_marginTop">7dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">42dp</item>
+    </style>
+
+    <style name="Widget.Spinner.Primary" parent="android:Widget">
+        <item name="android:background">@drawable/bg_spinner</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textColor">@color/colorTextGray3</item>
+        <item name="android:layout_marginTop">7dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">56dp</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="Widget.Date.Primary" parent="android:Widget">
+        <item name="android:background">@drawable/bg_input_date</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textSize">@dimen/textMedium</item>
+        <item name="android:textColor">@color/colorTextGray3</item>
+        <item name="android:layout_marginTop">7dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="Widget.Time.Primary" parent="android:Widget">
+        <item name="android:background">@drawable/bg_input_time</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textSize">@dimen/textMedium</item>
+        <item name="android:textColor">@color/colorTextGray3</item>
+        <item name="android:layout_marginTop">7dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="DialogStyle" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <style name="DateTimePickerTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="DialogRoundStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="dialogCornerRadius">10dp</item>
+    </style>
+
+    <style name="ProgressDialogStyle" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="dialogCornerRadius">10dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:textColorPrimary">@color/colorTextBlack</item>
+        <item name="android:textColorSecondary">@color/colorTextBlack</item>
+    </style>
+
+    <style name="expandedTitleStyle" parent="@style/TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="collapsedTitleStyle">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--Drawer Theme-->
+    <style name="ThemeOverlay.AppCompat.navTheme">
+        <!-- Color of text and icon when SELECTED -->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <!-- Background color when SELECTED -->
+        <item name="colorControlHighlight">@color/colorPrimaryExtraLight</item>
+    </style>
+</resources>

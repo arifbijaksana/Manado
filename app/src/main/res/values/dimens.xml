@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cardCorner">7dp</dimen>
+    <dimen name="searchCorner">10dp</dimen>
+    <dimen name="textMedium">16sp</dimen>
+    <dimen name="textMediumExtra">18sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">128dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="textSmallExtra">15sp</dimen>
+    <dimen name="iconSmallHeight">40dp</dimen>
+    <dimen name="btn_height">40dp</dimen>
+    <dimen name="textSmall">12sp</dimen>
+    <dimen name="textExtraSmall">11sp</dimen>
+    <dimen name="textMediumSmall">14sp</dimen>
+    <dimen name="radiusInput">3dp</dimen>
+    <dimen name="textLarge1">21sp</dimen>
+    <dimen name="_15dp">15dp</dimen>
+    <dimen name="_10dp">10dp</dimen>
+    <dimen name="_5dp">5dp</dimen>
+</resources>

@@ -1,0 +1,21 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+            android:shape="rectangle">
+            <solid android:color="@color/colorPrimaryExtraLight" />
+            <corners android:radius="@dimen/cardCorner"/>
+        </shape>
+    </item>
+    <item android:right="0dp" android:left="0dp" android:bottom="0dp">
+        <shape
+            android:shape="rectangle">
+            <solid android:color="@color/colorPrimaryExtraLight0"/>
+            <corners android:radius="@dimen/radiusInput" />
+            <stroke android:width="2dp" android:color="@color/colorPrimaryExtraLight" />
+        </shape>
+    </item>
+    <item android:right="5dp">
+        <bitmap android:gravity="center_vertical|right|end"
+            android:src="@drawable/ic_spinner_dropdown"/>
+    </item>
+</layer-list>
