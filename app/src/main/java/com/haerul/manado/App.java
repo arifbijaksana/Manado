@@ -12,6 +12,7 @@ import com.google.firebase.analytics.FirebaseAnalytics;
 import com.haerul.manado.di.component.AppComponent;
 import com.haerul.manado.di.component.DaggerAppComponent;
 
+
 import javax.inject.Inject;
 
 import dagger.android.AndroidInjector;

@@ -18,17 +18,17 @@ import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 
 import com.haerul.manado.R;
-import com.haerul.manado.ui.login.LoginActivity;
+import com.haerul.manado.ui.login2.LoginActivity2;
 import com.haerul.manado.utils.Constants;
 import com.haerul.manado.utils.Util;
 
 import dagger.android.AndroidInjection;
 
-public abstract class BaseActivity<T extends ViewDataBinding, V extends BaseViewModel> extends AppCompatActivity
+public abstract class BaseActivity2<T extends ViewDataBinding, V extends BaseViewModel> extends AppCompatActivity
         implements BaseFragment.Callback {
 
     public static final String TAG = "-->";
-    
+
     private T binding;
     private V viewModel;
     public ProgressDialog progressDialog;
@@ -72,7 +72,7 @@ public abstract class BaseActivity<T extends ViewDataBinding, V extends BaseView
         }
         this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
     }
-    
+
     public void showProgress() {
         try {
             if (progressDialog != null)
@@ -100,7 +100,7 @@ public abstract class BaseActivity<T extends ViewDataBinding, V extends BaseView
         binding.executePendingBindings();
     }
 
-    
+
     public boolean isNetworkConnected() {
 //        return Util.isNetworkConnected(getApplicationContext());
         return false;
@@ -136,7 +136,7 @@ public abstract class BaseActivity<T extends ViewDataBinding, V extends BaseView
 
     public void checkLogin() {
         if (!Util.getBooleanPreference(this, Constants.IS_LOGIN)) {
-            LoginActivity.navigateToLogin(this);
+            LoginActivity2.navigateToLogin(this);
             finish();
             overridePendingTransition(0, 0);
         }

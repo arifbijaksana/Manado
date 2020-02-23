@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <import type="android.view.View" />
+        <variable
+            name="viewModel"
+            type="com.haerul.manado.ui.home_pemeriksaan.HomePemeriksaan" />
+    </data>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:background="@color/colorBackground"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:id="@+id/banner"
+                    android:src="@drawable/bg_login"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:scaleType="centerCrop"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layCard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+              >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardTO"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="335dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                app:cardCornerRadius="8dp"
+                android:layout_weight="1"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_marginLeft="26dp"
+                        android:layout_marginRight="26dp"
+                        android:textSize="28sp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/logo_icon_v3"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp" />
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardTS"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="335dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                app:cardCornerRadius="8dp"
+                android:layout_weight="1"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_marginLeft="26dp"
+                        android:layout_marginRight="26dp"
+                        android:textSize="28sp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/logo_icon_v3"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp" />
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+
+                android:layout_below="@+id/layCard"
+                android:layout_marginBottom="@dimen/_15dp">
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:text="TARGET OPERASI"
+                android:textStyle="bold"
+                 android:textSize="@dimen/_15dp"
+                 android:layout_marginBottom="25dp"
+
+                 android:layout_marginLeft="50dp"
+                 android:layout_marginRight="35dp"
+                 android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="TO SISIR"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15dp"
+                    android:layout_marginBottom="25dp"
+                    android:paddingLeft="20dp"
+
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</layout>

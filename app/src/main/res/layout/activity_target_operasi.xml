@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.haerul.manado.ui.home_pemeriksaan.target_operasi.TargetOperasiActivity" />
+    </data>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg_login" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layCard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardTO"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="105dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardCornerRadius="8dp"
+
+                    app:cardElevation="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="35dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_weight="1"
+                            android:text="ID PELANGGAN"
+                            android:textSize="@dimen/_15dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="35dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_weight="1"
+                            android:text="NAMA"
+                            android:textSize="@dimen/_15dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="35dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_weight="1"
+                            android:text="ALAMAT"
+                            android:textSize="@dimen/_15dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</layout>
